@@ -24,8 +24,8 @@ public class Main {
             }
         }
         System.out.println();
-        for (double v = 0; v<fractionalNumbers.length; v++){
-            System.out.print(fractionalNumbers[(int) v]);
+        for (int v = 0; v<fractionalNumbers.length; v++){
+            System.out.print(fractionalNumbers[v]);
             if (v<fractionalNumbers.length-1){
                 System.out.print(", ");
             }
@@ -43,12 +43,16 @@ public class Main {
         for (int e = w.length-1; e>=0; e--){
             if (e!=0){
                 System.out.print(w[e] + ", ");
+            }else {
+                System.out.print(w[e]);
             }
         }
         System.out.println();
         for (int m = fractionalNumbers.length-1; m >= 0; m--){
             if(m != 0){
                 System.out.print(fractionalNumbers[m] + ", ");
+            }else {
+                System.out.print(fractionalNumbers[m]);
             }
         }
 
@@ -56,6 +60,8 @@ public class Main {
         for (int x = z.length - 1; x>=0; x--){
             if (x!=0){
                 System.out.print(z[x] + ", ");
+            }else {
+                System.out.print(z[x]);
             }
 
         }
